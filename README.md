@@ -57,4 +57,4 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    node zoomBot.js
    ```
-5. Follow the application Prompts. 
+5. Follow the application prompts. 
