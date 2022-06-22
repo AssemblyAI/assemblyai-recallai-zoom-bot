@@ -12,7 +12,7 @@ const port = 8000
 app.use(express.json())
 
 /******************************************************************************
- * Dependencies 
+ * Routes 
 ******************************************************************************/
 // Webhook endpoint to handle incoming transcripts from Recall
 app.post('/meeting_transcript', (req, res) => {
