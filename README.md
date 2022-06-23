@@ -1,6 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a simple CLI project that uses [Recall.ai](https://www.recall.ai), [AssemblyAI](https://www.assemblyai.com) and Zoom.
+This is a simple CLI project that uses [Recall.ai](https://www.recall.ai/assemblyai), [AssemblyAI](https://www.assemblyai.com) and Zoom.
 A user can provide a Zoom URL allowing a transcription bot (created and maintained by Recall.ai) to join the meeting. 
 
 
@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [https://www.recall.ai](https://www.recall.ai)
+1. Get a free API Key at [https://www.recall.ai/assemblyai](https://www.recall.ai/assemblyai)
 2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
