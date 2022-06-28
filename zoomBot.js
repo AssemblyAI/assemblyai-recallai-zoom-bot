@@ -31,7 +31,7 @@ const connectBot = async (meetingURL) => {
             transcription: { provider: 'assemblyai' },
 
             // Webhook URL that is provided via our .env file.
-            real_time_transcription: { destination_url: `${process.env.MEETING_URL}/meeting_transcript` }
+            real_time_transcription: { destination_url: `${process.env.WEBHOOK_URL}/meeting_transcript` }
         }
         const response = await recall.post('/bot', payload)
         const { data: { id } } = response
