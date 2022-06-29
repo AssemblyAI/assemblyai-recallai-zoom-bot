@@ -26,9 +26,9 @@ const connectBot = async (meetingURL) => {
         const payload = {
             // URL of the zoom meeting provided by the user.
             meeting_url: meetingURL,
-            
+
             // Name of the bot
-            bot_name: "Transcription Bot"
+            bot_name: "Transcription Bot",
 
             // Specify AssemblyAI as the transcription provider.
             transcription: { provider: 'assemblyai' },
