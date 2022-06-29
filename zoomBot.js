@@ -54,7 +54,7 @@ const runApp = async () => {
     const meetingURL = prompt('What is your meeting URL?: ')
     const meetingID = await connectBot(meetingURL)
     console.info(`Joining meeting: ${meetingID}`)
-    const endMeeting = prompt('Type "STOP" to end notetaking: ')
+    const endMeeting = prompt('Type "STOP" to end transcription: ')
     if (endMeeting.toLowerCase() === 'stop') {
         await leaveMeeting(meetingID)
     }
