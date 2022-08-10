@@ -12,7 +12,7 @@ const prompt = promptSync()
 const recall = axios.create({
     baseURL: 'https://api.recall.ai/api/v1',
     headers: {
-        'authorization': process.env.RECALL_API_KEY,
+        'authorization': `token ${process.env.RECALL_API_KEY}`,
         'content-type': 'application/json'
     },
     timeout: 10000

@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 4. Enter your API Key in the `.env` file.
    ```txt
-   RECALL_API_KEY=token YOUR TOKEN HERE
+   RECALL_API_KEY=YOUR TOKEN HERE
    ```
 
 <!-- USAGE EXAMPLES -->
