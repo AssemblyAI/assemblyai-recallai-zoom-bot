@@ -31,7 +31,7 @@ const connectBot = async (meetingURL) => {
             bot_name: "Transcription Bot",
 
             // Specify AssemblyAI as the transcription provider.
-            transcription: { provider: 'assemblyai' },
+            transcription_options: { provider: 'assembly_ai' },
 
             // Webhook URL that is provided via our .env file.
             real_time_transcription: { destination_url: `${process.env.WEBHOOK_URL}/meeting_transcript` }
