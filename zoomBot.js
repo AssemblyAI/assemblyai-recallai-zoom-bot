@@ -31,10 +31,23 @@ const connectBot = async (meetingURL) => {
             bot_name: "Transcription Bot",
 
             // Specify AssemblyAI as the transcription provider.
-            transcription_options: { provider: 'assembly_ai' },
-
-            // Webhook URL that is provided via our .env file.
-            real_time_transcription: { destination_url: `${process.env.WEBHOOK_URL}/meeting_transcript` }
+            recording_config": {
+              transcript": {
+                provider": {
+                  assembly_ai_v3_streaming": {}
+                }
+              }
+            },
+            realtime_endpoints": [ 
+              // Webhook URL that is provided via our .env file.
+              {
+                type: "websocket",
+                events: [
+                  "transcript.data"
+                ],
+                url: `${process.env.WEBHOOK_URL}/meeting_transcript`
+              }
+            ]
         }
         const response = await recall.post('/bot', payload)
         const { data: { id } } = response
