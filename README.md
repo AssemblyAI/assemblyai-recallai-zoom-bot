@@ -8,7 +8,7 @@ For experienced users who want to get started immediately:
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/YOUR-USERNAME/assemblyai-recallai-zoom-bot.git
+git clone https://github.com/AssemblyAI/assemblyai-recallai-zoom-bot.git
 cd assemblyai-recallai-zoom-bot
 npm install
 
@@ -54,7 +54,7 @@ Follow this step-by-step guide to set up and run the transcription bot.
 
 **Terminal 1** - Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/YOUR-USERNAME/assemblyai-recallai-zoom-bot.git
+git clone https://github.com/AssemblyAI/assemblyai-recallai-zoom-bot.git
 cd assemblyai-recallai-zoom-bot
 npm install
 ```
