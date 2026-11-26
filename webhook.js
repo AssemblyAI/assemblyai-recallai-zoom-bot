@@ -41,8 +41,9 @@ app.post('/meeting_transcript', (req, res) => {
             const { data: transcriptData } = data
             const { words, participant, transcript } = transcriptData
             
-            if (participant?.name && words?.length > 0) {
+            if ((participant?.name || participant?.id != null) && words?.length > 0) {
                 const eventType = event === 'transcript.data' ? 'FINAL' : 'PARTIAL'
+                const speaker = participant.name || `Participant ${participant.id}`
                 
                 // Extract transcript text - try formatted text first, fall back to words
                 let transcriptText = ''
@@ -56,7 +57,7 @@ app.post('/meeting_transcript', (req, res) => {
                 }
                 
                 // Display the transcript
-                console.log(`[TRANSCRIPT] ${eventType} - ${participant.name}: ${transcriptText}`)
+                console.log(`[TRANSCRIPT] ${eventType} - ${speaker}: ${transcriptText}`)
             }
         } else {
             console.log(`[WEBHOOK] Non-transcript event: ${event}`)
